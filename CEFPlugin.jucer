@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="jXbtGS" name="CEFPlugIn" projectType="audioplug" bundleIdentifier="com.tartifl8.CEFPlugIn"
+              buildVST3="1" pluginName="CEFPlugIn" pluginDesc="CEFPlugIn" pluginManufacturer="tartifl8"
+              pluginManufacturerCode="TFL8" pluginCode="CEF" pluginChannelConfigs=""
+              pluginSilenceInIsSilenceOut="1" pluginAUExportPrefix="CEFPlugInAU"
+              pluginRTASCategory="" aaxIdentifier="com.tartifl8.CEFPlugIn"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="5.2.1"
+              displaySplashScreen="0" reportAppUsage="0" companyName="tartifl8"
+              companyCopyright="tartifl8">
+  <MAINGROUP id="sXaVAU" name="CEFPlugIn">
+    <GROUP id="{57500C1B-EA6F-4A79-EE51-1D02CA8A8350}" name="Source">
+      <FILE id="h2GbsD" name="GLProcessorEditor.h" compile="0" resource="0"
+            file="Source/GLProcessorEditor.h"/>
+      <FILE id="Ug1XFC" name="BrowserManager.cpp" compile="1" resource="0"
+            file="Source/BrowserManager.cpp"/>
+      <FILE id="aFHmQk" name="BrowserManager.h" compile="0" resource="0"
+            file="Source/BrowserManager.h"/>
+      <FILE id="onMQhO" name="GLProcessorEditor.cpp" compile="1" resource="0"
+            file="Source/GLProcessorEditor.cpp"/>
+      <FILE id="MTqjcu" name="GenericEditor.h" compile="0" resource="0" file="Source/GenericEditor.h"/>
+      <FILE id="gNoGxx" name="GainProcessor.cpp" compile="1" resource="0"
+            file="Source/GainProcessor.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2015 targetFolder="Builds/VisualStudio2015" vst3Folder="D:\Development\VST3 SDK\vstsdk368_08_11_2017_build_121\VST_SDK\VST3_SDK"
+            externalLibraries="libcef.lib;libcef_dll_wrapper.lib">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" targetName="CefPlugin" libraryPath="D:\Development\cef_binary_3.3325.1749.ga42963a_windows64\Debug; D:\Development\cef_binary_3.3325.1749.ga42963a_windows64\build\libcef_dll_wrapper\Debug"
+                       headerPath="D:\Development\cef_binary_3.3325.1749.ga42963a_windows64"/>
+        <CONFIGURATION name="Release" isDebug="0" targetName="CefPlugin" libraryPath="D:\Development\cef_binary_3.3325.1749.ga42963a_windows64\Release;&#10;D:\Development\cef_binary_3.3325.1749.ga42963a_windows64\build\libcef_dll_wrapper\Debug"
+                       headerPath="D:\Development\cef_binary_3.3325.1749.ga42963a_windows64"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="../../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../modules"/>
+        <MODULEPATH id="juce_events" path="../../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../modules"/>
+        <MODULEPATH id="juce_core" path="../../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
